@@ -3,58 +3,93 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Corinthians - Página Oficial de Fã</title>
+  <title>Corinthians – Página de Fã</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: #000; /* preto */
-      color: #fff; /* branco */
-      text-align: center;
       margin: 0;
-      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #000;
+      color: #fff;
     }
     header {
       background-color: #111;
+      text-align: center;
       padding: 20px;
     }
+    header img {
+      width: 150px;
+    }
     header h1 {
+      margin-top: 10px;
       color: #fff;
     }
-    .logo {
-      width: 150px;
-      margin-top: 10px;
+    nav {
+      background-color: #222;
+      text-align: center;
+      padding: 10px 0;
+    }
+    nav a {
+      color: #ccc;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #fff;
     }
     section {
       padding: 30px;
+      text-align: center;
     }
-    a {
-      color: #ccc;
-      text-decoration: none;
+    .galeria {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+      margin-top: 20px;
     }
-    a:hover {
-      color: #fff;
+    .galeria img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(255,255,255,0.1);
+      transition: transform 0.3s;
+    }
+    .galeria img:hover {
+      transform: scale(1.05);
     }
     footer {
       background-color: #111;
-      padding: 10px;
+      text-align: center;
+      padding: 15px;
       font-size: 14px;
     }
   </style>
 </head>
 <body>
   <header>
+    <img src="https://upload.wikimedia.org/wikipedia/pt/thumb/6/66/Corinthians_simbolo.png/200px-Corinthians_simbolo.png" alt="Escudo do Corinthians">
     <h1>Sport Club Corinthians Paulista</h1>
-    <img src="https://upload.wikimedia.org/wikipedia/pt/thumb/6/66/Corinthians_simbolo.png/200px-Corinthians_simbolo.png" alt="Escudo do Corinthians" class="logo">
   </header>
 
-  <section>
-    <h2>Bem-vindo à página de fãs do Timão!</h2>
-    <p>Aqui você encontra notícias, história e curiosidades sobre o Corinthians.</p>
-    <p><a href="https://www.corinthians.com.br" target="_blank">Site Oficial</a></p>
+  <nav>
+    <a href="#historia">História</a>
+    <a href="#galeria">Galeria</a>
+    <a href="https://www.corinthians.com.br" target="_blank">Site Oficial</a>
+  </nav>
+
+  <section id="historia">
+    <h2>Sobre o Corinthians</h2>
+    <p>O Sport Club Corinthians Paulista é um dos clubes mais tradicionais do Brasil, fundado em 1910. Com sua torcida fiel, o Timão já conquistou inúmeros títulos nacionais e internacionais.</p>
+  </section>
+
+  <section id="galeria">
+    <h2>Galeria de Fotos</h2>
+    <div class="galeria">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/b/b4/CorinthiansArena.jpg" alt="Arena Corinthians">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/CassioCorinthians.jpg/640px-CassioCorinthians.jpg" alt="Jogador Cássio">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/2/2e/Torcida_do_Corinthians.jpg" alt="Torcida do Corinthians">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Corinthians-Campe%C3%A3o-Mundial.jpg/640px-Corinthians-Campe%C3%A3o-Mundial.jpg" alt="Título Mundial">
+    </div>
   </section>
 
   <footer>
-    <p>Feito com ❤️ por um torcedor do Timão</p>
-  </footer>
-</body>
-</html>
+    Feito com ❤️ por um torcedor do Timão | <a href="https://github.com/seuusuario" style="color:#ccc;">Meu GitHub</a>
